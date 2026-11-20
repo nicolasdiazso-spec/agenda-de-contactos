@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda de Contactos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="contenedor">
+    <header class="encabezado">
+      <h1>📇 Agenda de Contactos</h1>
+      <p>CRUD con HTML, CSS y JavaScript puro · datos guardados en localStorage</p>
+    </header>
+
+    <!-- CREAR / ACTUALIZAR -->
+    <section class="tarjeta">
+      <h2 id="titulo-form">Nuevo contacto</h2>
+      <form id="form-contacto" novalidate>
+        <input type="hidden" id="contacto-id">
+
+        <div class="campo">
+          <label for="nombre">Nombre *</label>
+          <input type="text" id="nombre" maxlength="60" placeholder="Ej: Laura Gómez" required>
+          <small class="error" id="error-nombre"></small>
+        </div>
+
+        <div class="fila">
+          <div class="campo">
+            <label for="telefono">Teléfono *</label>
+            <input type="tel" id="telefono" maxlength="20" placeholder="Ej: 3001234567" required>
+            <small class="error" id="error-telefono"></small>
+          </div>
+          <div class="campo">
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" maxlength="80" placeholder="Ej: laura@correo.com">
+            <small class="error" id="error-correo"></small>
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="notas">Notas</label>
+          <textarea id="notas" rows="2" maxlength="200" placeholder="Opcional"></textarea>
+        </div>
+
+        <div class="acciones">
+          <button type="submit" class="btn btn-primario" id="btn-guardar">Guardar contacto</button>
+          <button type="button" class="btn btn-secundario" id="btn-cancelar" hidden>Cancelar edición</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- LEER -->
+    <section class="tarjeta">
+      <div class="barra-lista">
+        <h2>Mis contactos <span class="contador" id="contador">0</span></h2>
+        <input type="search" id="buscador" placeholder="🔍 Buscar por nombre, teléfono o correo">
+      </div>
+
+      <ul id="lista-contactos" class="lista"></ul>
+      <p id="vacio" class="vacio" hidden>No hay contactos para mostrar.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
