@@ -9,3 +9,5 @@ instrucciones para ejecutarlo. Son muy simples, se descarga el repositorio, se a
 Lista de Prompts:
 Crea una app web CRUD de contactos con HTML, CSS y JavaScript puro. Debe guardar los datos en localStorage. Dame index.html, style.css y app.js
 ya tengo mi CRUD funcionando de contctos en HTML, CSS y JavaScript en localstorage, quiero que refactorices el archivo de app.js sin cambiar el funcionamiento de la aplicacion, ponle que cuando ya exist un contacto mantengas una validacion y un escape de que ya es un contacto existente
+<img width="1556" height="882" alt="image" src="https://github.com/user-attachments/assets/70dbd2dd-19b5-4185-95b7-6e0beaaf38d2" />
+<img width="1321" height="840" alt="image" src="https://github.com/user-attachments/assets/b2ee3cc3-6770-4b9c-8b1d-1bcaffe9dfb1" />
